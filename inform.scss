@@ -1,0 +1,26 @@
+.inform {
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #5bc0de;
+  transform: translate(0, -150%);
+  opacity: .95;
+  z-index: 8888;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  &.inform-error {
+    background: #d00000;
+  }
+  &.inform-success {
+    background: #00d000;
+  }
+  &.open {
+    top: 0;
+    transform: translate(0, 0);
+  }
+}
